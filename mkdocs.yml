@@ -1,0 +1,16 @@
+site_name: SimplyOutput
+theme:
+  name: material
+  features:
+    - navigation.tabs
+   # - navigation.tabs.sticky
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
