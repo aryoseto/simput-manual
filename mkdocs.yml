@@ -1,6 +1,10 @@
 site_name: SimplyOutput
 theme:
+  icon:
+    logo: material/text-box-outline
   name: material
+  palette:
+    primary: red
   features:
     - navigation.tabs
    # - navigation.tabs.sticky
@@ -14,3 +18,9 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+copyright: Copyright &copy; 2021 Aryo Wicaksono - Ramzitech Engineering Services
+extra: 
+  social:
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:aryo.wicaksono@ramzitech.com
+  
