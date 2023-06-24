@@ -1,0 +1,757 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../SACS/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.17">
+    
+    
+      
+        <title>SACS - SimplyOutput</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sesam" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="SimplyOutput" class="md-header__button md-logo" aria-label="SimplyOutput" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3c-1.11 0-2 .89-2 2v14c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2H5m0 2h14v14H5V5m2 2v2h10V7H7m0 4v2h10v-2H7m0 4v2h7v-2H7Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SimplyOutput
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              SACS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../SACS/" class="md-tabs__link md-tabs__link--active">
+        Commands
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SimplyOutput" class="md-nav__button md-logo" aria-label="SimplyOutput" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3c-1.11 0-2 .89-2 2v14c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2H5m0 2h14v14H5V5m2 2v2h10V7H7m0 4v2h10v-2H7m0 4v2h7v-2H7Z"/></svg>
+
+    </a>
+    SimplyOutput
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Commands
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Commands
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SACS/" class="md-nav__link">
+        SESAM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          SACS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        SACS
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sestra10-loadsum" class="md-nav__link">
+    sestra10-loadsum
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sestra8-loadsum" class="md-nav__link">
+    sestra8-loadsum
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#framework-getconecheckapi" class="md-nav__link">
+    framework-getconecheckapi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#framework-getfatresjoint" class="md-nav__link">
+    framework-getfatresjoint
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#framework-getjointcheckiso" class="md-nav__link">
+    framework-getjointcheckiso
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#framework-getmemcheck360" class="md-nav__link">
+    framework-getmemcheck360
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#framework-getmemcodecheck" class="md-nav__link">
+    framework-getmemcodecheck
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#genie-getmemberforce" class="md-nav__link">
+    genie-getmemberforce
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#genie-getnodedisplacement" class="md-nav__link">
+    genie-getnodedisplacement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#genie-getreaction" class="md-nav__link">
+    genie-getreaction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#splice-getforcedisp" class="md-nav__link">
+    splice-getforcedisp
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sestra10-loadsum" class="md-nav__link">
+    sestra10-loadsum
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sestra8-loadsum" class="md-nav__link">
+    sestra8-loadsum
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#framework-getconecheckapi" class="md-nav__link">
+    framework-getconecheckapi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#framework-getfatresjoint" class="md-nav__link">
+    framework-getfatresjoint
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#framework-getjointcheckiso" class="md-nav__link">
+    framework-getjointcheckiso
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#framework-getmemcheck360" class="md-nav__link">
+    framework-getmemcheck360
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#framework-getmemcodecheck" class="md-nav__link">
+    framework-getmemcodecheck
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#genie-getmemberforce" class="md-nav__link">
+    genie-getmemberforce
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#genie-getnodedisplacement" class="md-nav__link">
+    genie-getnodedisplacement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#genie-getreaction" class="md-nav__link">
+    genie-getreaction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#splice-getforcedisp" class="md-nav__link">
+    splice-getforcedisp
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="sesam">SESAM</h1>
+<h2 id="sestra10-loadsum">sestra10-loadsum</h2>
+<p>This command is to extract load summary from lis file (normaly SESTRA.LIS) generated by SESTRA 10. The result cases table is also extracted.</p>
+<div class="language-batch highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>simplyoutput sestra10-loadsum sestrafilename excelfilename
+</span></code></pre></div>
+<ul>
+<li><code>sestrafilename</code> sestra lis file, normaly SESTRA.LIS [Required]</li>
+<li><code>excelname</code> name of the excel file that is going to be generated, <code>.xlsx</code> file type must be included in the name [Required]</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Versions Tested</p>
+<p>SESTRA 10.12.0.144</p>
+</div>
+<h2 id="sestra8-loadsum">sestra8-loadsum</h2>
+<p>This command is to extract load summary from lis file (normaly sestrared.LIS) generated by SESTRA 8. </p>
+<div class="language-batch highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>simplyoutput sestra8-loadsum sestrafilename excelfilename
+</span></code></pre></div>
+<ul>
+<li><code>sestrafilename</code> sestra lis file, normaly sestrared.LIS [Required]</li>
+<li><code>excelname</code> name of the excel file that is going to be generated, <code>.xlsx</code> file type must be included in the name [Required]</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Versions Tested</p>
+<p>SESTRA 8.8-02</p>
+</div>
+<h2 id="framework-getconecheckapi">framework-getconecheckapi</h2>
+<p>This command is to extract ISO's cone check results from FRAMEWORK print out.</p>
+<div class="language-batch highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>simplyoutput framework-getconecheckapi frameworkoutputname excelfilename --lookupid <span class="s2">&quot;A B&quot;</span>
+</span></code></pre></div>
+<ul>
+<li><code>frameworkoutputname</code> FRAMEWORK output file containing the cone check results [Required]</li>
+<li><code>excelfilename</code> name of the excel file that is going to be generated, <code>.xlsx</code> file type must be included in the name [Required]</li>
+<li><code>--lookupid "A B"</code> Additional command to create additional column from a combination of 2 or more of the existing columns. For example, creating additional column that is made from first column and third column, then put <code>--lookupid "0 2"</code>. Note that first column is column 0.  </li>
+</ul>
+<p>The FRAMEWORK output file must be generated with the following commands.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>PUT THE FRAMEWORK COMMANDS HERE
+</span></code></pre></div></p>
+<div class="admonition note">
+<p class="admonition-title">Versions Tested</p>
+<p>FRAMEWORK X.XXX.XX</p>
+</div>
+<h2 id="framework-getfatresjoint">framework-getfatresjoint</h2>
+<p>This command is to extract joint fatigue result generated by FRAMEWORK. The FRAMEWORK printout  must be generated in LANDSCAPE format, and JOINT based. </p>
+<div class="language-batch highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>simplyoutput fframework-getfatresjoint frameworkoutputname excelfilename --lookupid <span class="s2">&quot;A B&quot;</span>
+</span></code></pre></div>
+<ul>
+<li><code>frameworkoutputname</code> FRAMEWORK output file containing the joint fatigue results [Required]</li>
+<li><code>excelfilename</code> name of the excel file that is going to be generated, <code>.xlsx</code> file type must be included in the name [Required]</li>
+<li><code>--lookupid "A B"</code> Additional command to create additional column from a combination of 2 or more of the existing columns. For example, creating additional column that is made from first column and third column, then put <code>--lookupid "0 2"</code>. Note that first column is column 0. </li>
+</ul>
+<p>The FRAMEWORK output file must be generated with the following commands.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>PUT THE FRAMEWORK COMMANDS HERE
+</span></code></pre></div></p>
+<div class="admonition note">
+<p class="admonition-title">Versions Tested</p>
+<p>FRAMEWORK X.XXX.XX</p>
+</div>
+<h2 id="framework-getjointcheckiso">framework-getjointcheckiso</h2>
+<p>This command is to extract FRAMEWORK's ISO joint check result printout. The FRAMEWORK printout  must be generated in LANDSCAPE format, and JOINT based.  </p>
+<div class="language-batch highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>simplyoutput framework-getjointcheckiso frameworkoutputname excelfilename --lookupid <span class="s2">&quot;A B&quot;</span>
+</span></code></pre></div>
+<ul>
+<li><code>frameworkoutputname</code> FRAMEWORK output file containing the ISO joint check results [Required]</li>
+<li><code>excelfilename</code> name of the excel file that is going to be generated, <code>.xlsx</code> file type must be included in the name [Required]</li>
+<li><code>--lookupid "A B"</code> Additional command to create additional column from a combination of 2 or more of the existing columns. For example, creating additional column that is made from first column and third column, then put <code>--lookupid "0 2"</code>. Note that first column is column 0. </li>
+</ul>
+<p>The FRAMEWORK output file must be generated with the following commands.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>PUT THE FRAMEWORK COMMANDS HERE
+</span></code></pre></div></p>
+<div class="admonition note">
+<p class="admonition-title">Versions Tested</p>
+<p>FRAMEWORK X.XXX.XX</p>
+</div>
+<h2 id="framework-getmemcheck360">framework-getmemcheck360</h2>
+<p>This command is to extract FRAMEWORK AISC 360 LRFD member code check result printout. The printout must be generated in LANDSCAPE format and using FULL printout option. </p>
+<div class="language-batch highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>simplyoutput framework-getmemcheck360 frameworkoutputname excelfilename --lookupid <span class="s2">&quot;A B&quot;</span>
+</span></code></pre></div>
+<ul>
+<li><code>frameworkoutputname</code> FRAMEWORK output file containing the AISC 360 LRFD member check results [Required]</li>
+<li><code>excelfilename</code> name of the excel file that is going to be generated, <code>.xlsx</code> file type must be included in the name [Required]</li>
+<li><code>--lookupid "A B"</code> Additional command to create additional column from a combination of 2 or more of the existing columns. For example, creating additional column that is made from first column and third column, then put <code>--lookupid "0 2"</code>. Note that first column is column 0. </li>
+</ul>
+<p>The FRAMEWORK output file must be generated with the following commands.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>PUT THE FRAMEWORK COMMANDS HERE
+</span></code></pre></div></p>
+<div class="admonition note">
+<p class="admonition-title">Versions Tested</p>
+<p>FRAMEWORK X.XXX.XX</p>
+</div>
+<h2 id="framework-getmemcodecheck">framework-getmemcodecheck</h2>
+<p>This command is to extract FRAMEWORK ISO member code check result printout. The printout must be generated in LANDSCAPE format and using FULL printout option. </p>
+<div class="language-batch highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>simplyoutput framework-getmemcodecheck frameworkoutputname excelfilename --lookupid <span class="s2">&quot;A B&quot;</span>
+</span></code></pre></div>
+<ul>
+<li><code>frameworkoutputname</code> FRAMEWORK output file containing the ISO member code results [Required]</li>
+<li><code>excelfilename</code> name of the excel file that is going to be generated, <code>.xlsx</code> file type must be included in the name [Required]</li>
+<li><code>--lookupid "A B"</code> Additional command to create additional column from a combination of 2 or more of the existing columns. For example, creating additional column that is made from first column and third column, then put <code>--lookupid "0 2"</code>. Note that first column is column 0. </li>
+</ul>
+<p>The FRAMEWORK output file must be generated with the following commands.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>PUT THE FRAMEWORK COMMANDS HERE
+</span></code></pre></div></p>
+<div class="admonition note">
+<p class="admonition-title">Versions Tested</p>
+<p>FRAMEWORK X.XXX.XX</p>
+</div>
+<h2 id="genie-getmemberforce">genie-getmemberforce</h2>
+<p>This command is to extract member forces printed from GeniE report using <code>text2</code> format. </p>
+<div class="language-batch highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>simplyoutput genie-getmemberforce geniereportfilename excelfilename --lookupid <span class="s2">&quot;A B&quot;</span>
+</span></code></pre></div>
+<ul>
+<li><code>geniereportfilename</code> Genie report printout file containing the member force result [Required]</li>
+<li><code>excelfilename</code> name of the excel file that is going to be generated, <code>.xlsx</code> file type must be included in the name [Required]</li>
+<li><code>--lookupid "A B"</code> Additional command to create additional column from a combination of 2 or more of the existing columns. For example, creating additional column that is made from first column and third column, then put <code>--lookupid "0 2"</code>. Note that first column is column 0. </li>
+</ul>
+<p>The GeniE report printout file must be generated with the following commands.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nx">GeniEReporting</span><span class="p">.</span><span class="nx">saveAs</span><span class="p">(</span><span class="s2">&quot;MemberForces.txt&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">text2</span><span class="p">);</span>
+</span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Versions Tested</p>
+<p>GeniE V8.2-04</p>
+</div>
+<h2 id="genie-getnodedisplacement">genie-getnodedisplacement</h2>
+<p>This command is to extract node displacement printed from GeniE report using <code>text2</code> format. </p>
+<div class="language-batch highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>simplyoutput genie-getnodedisplacement geniereportfilename excelfilename --lookupid <span class="s2">&quot;A B&quot;</span>
+</span></code></pre></div>
+<ul>
+<li><code>geniereportfilename</code> Genie report printout file containing node displacements [Required]</li>
+<li><code>excelfilename</code> name of the excel file that is going to be generated, <code>.xlsx</code> file type must be included in the name [Required]</li>
+<li><code>--lookupid "A B"</code> Additional command to create additional column from a combination of 2 or more of the existing columns. For example, creating additional column that is made from first column and third column, then put <code>--lookupid "0 2"</code>. Note that first column is column 0. </li>
+</ul>
+<p>The GeniE report printout file must be generated with the following commands.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nx">GeniEReporting</span><span class="p">.</span><span class="nx">saveAs</span><span class="p">(</span><span class="s2">&quot;NodeDisp.txt&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">text2</span><span class="p">);</span>
+</span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Versions Tested</p>
+<p>GeniE V8.2-04</p>
+</div>
+<h2 id="genie-getreaction">genie-getreaction</h2>
+<p>This command is to extract support reaction printed from GeniE report using <code>text2</code> format. </p>
+<div class="language-batch highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>simplyoutput genie-getreaction geniereportfilename excelfilename --lookupid <span class="s2">&quot;A B&quot;</span>
+</span></code></pre></div>
+<ul>
+<li><code>geniereportfilename</code> Genie report printout file containing support reactions [Required]</li>
+<li><code>excelfilename</code> name of the excel file that is going to be generated, <code>.xlsx</code> file type must be included in the name [Required]</li>
+<li><code>--lookupid "A B"</code> Additional command to create additional column from a combination of 2 or more of the existing columns. For example, creating additional column that is made from first column and third column, then put <code>--lookupid "0 2"</code>. Note that first column is column 0. </li>
+</ul>
+<p>The GeniE report printout file must be generated with the following commands.</p>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="nx">GeniEReporting</span><span class="p">.</span><span class="nx">saveAs</span><span class="p">(</span><span class="s2">&quot;SuppReact.txt&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">text2</span><span class="p">);</span>
+</span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Versions Tested</p>
+<p>GeniE V8.2-04</p>
+</div>
+<h2 id="splice-getforcedisp">splice-getforcedisp</h2>
+<p>This command is to extract pile head force and displacement generated by SPLICE, normally in <code>splice.lis</code> file. </p>
+<div class="language-batch highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>simplyoutput splice-getforcedisp spliceoutputfile excelfilename --lookupid <span class="s2">&quot;A B&quot;</span>
+</span></code></pre></div>
+<ul>
+<li><code>spliceoutputfile</code> Splice output file, normally <code>splice.lis</code> [Required]</li>
+<li><code>excelfilename</code> name of the excel file that is going to be generated, <code>.xlsx</code> file type must be included in the name [Required]</li>
+<li><code>--lookupid "A B"</code> Additional command to create additional column from a combination of 2 or more of the existing columns. For example, creating additional column that is made from first column and third column, then put <code>--lookupid "0 2"</code>. Note that first column is column 0. </li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Versions Tested</p>
+<p>SPLICE 7.4-00</p>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2021 Aryo Wicaksono - Ramzitech Engineering Services
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:aryo.wicaksono@ramzitech.com" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.b425cdc4.min.js"></script>
+      
+    
+  </body>
+</html>
