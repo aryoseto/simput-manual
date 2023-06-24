@@ -1,4 +1,0 @@
-# SACS
-
-## sacslst-getloadsum
-
